@@ -1,4 +1,5 @@
 ---
+name: context-detection
 description: Automatically detect project tech stack, frameworks, and development context
 ---
 

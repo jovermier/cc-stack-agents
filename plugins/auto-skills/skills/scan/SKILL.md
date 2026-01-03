@@ -1,4 +1,5 @@
 ---
+name: scan
 description: Automatically discover and install relevant skills from SkillsMP and other sources
 ---
 
