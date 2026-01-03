@@ -1,0 +1,20 @@
+{
+  "name": "cc-auto-agent",
+  "description": "Self-improving agent that automatically detects project needs and installs relevant plugins and skills from SkillsMP and other sources.",
+  "version": "1.0.0",
+  "author": {
+    "name": "jovermier",
+    "url": "https://github.com/jovermier"
+  },
+  "homepage": "https://github.com/jovermier/cc-stack-marketplace",
+  "repository": "https://github.com/jovermier/cc-stack-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "auto-install",
+    "self-improving",
+    "skills",
+    "plugins",
+    "automation",
+    "productivity"
+  ]
+}

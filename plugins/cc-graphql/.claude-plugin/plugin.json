@@ -1,0 +1,23 @@
+{
+  "name": "cc-graphql",
+  "description": "Claude Code agents and skills for GraphQL development. Schema design, resolvers, and mutations expertise.",
+  "version": "1.0.0",
+  "author": {
+    "name": "jovermier",
+    "url": "https://github.com/jovermier"
+  },
+  "homepage": "https://github.com/jovermier/cc-stack-marketplace",
+  "repository": "https://github.com/jovermier/cc-stack-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "graphql",
+    " gql",
+    "api",
+    "schema-design",
+    "resolvers",
+    "mutations",
+    "code-review",
+    "skills",
+    "domain-knowledge"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "cc-go",
+  "description": "Claude Code agents and skills for Go development. Performance, concurrency, error handling, and testing expertise.",
+  "version": "1.0.0",
+  "author": {
+    "name": "jovermier",
+    "url": "https://github.com/jovermier"
+  },
+  "homepage": "https://github.com/jovermier/cc-stack-marketplace",
+  "repository": "https://github.com/jovermier/cc-stack-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "go",
+    "golang",
+    "code-review",
+    "performance",
+    "concurrency",
+    "error-handling",
+    "testing",
+    "skills",
+    "domain-knowledge"
+  ]
+}

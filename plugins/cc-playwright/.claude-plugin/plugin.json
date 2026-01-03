@@ -1,0 +1,22 @@
+{
+  "name": "cc-playwright",
+  "description": "Claude Code agents and skills for Playwright testing. Page objects, best practices, and test generation expertise.",
+  "version": "1.0.0",
+  "author": {
+    "name": "jovermier",
+    "url": "https://github.com/jovermier"
+  },
+  "homepage": "https://github.com/jovermier/cc-stack-marketplace",
+  "repository": "https://github.com/jovermier/cc-stack-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "playwright",
+    "e2e-testing",
+    "end-to-end",
+    "testing",
+    "page-objects",
+    "test-generation",
+    "skills",
+    "domain-knowledge"
+  ]
+}
