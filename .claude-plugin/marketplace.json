@@ -94,7 +94,7 @@
       "tags": ["auto-install", "self-improving", "automation", "productivity", "skills"],
       "source": "./plugins/auto-skills",
       "commands": ["./auto-skills.md"],
-      "skills": ["./skills/context-detection", "./skills/auto-skill"]
+      "skills": ["./skills/context-detection", "./skills/scan"]
     }
   ]
 }

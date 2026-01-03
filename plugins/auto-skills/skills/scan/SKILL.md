@@ -2,7 +2,7 @@
 description: Automatically discover and install relevant skills from SkillsMP and other sources
 ---
 
-# Auto Skill Installation
+# Scan
 
 Automatically discovers and installs Claude skills from SkillsMP.com, official sources, and third-party marketplaces based on project context.
 
@@ -61,13 +61,41 @@ else
   TARGET=".claude/skills"
 fi
 
+# Check for existing skills in BOTH locations
+get_installed_skills() {
+  # Check workspace skills
+  if [ -d "$HOME/.claude/skills" ]; then
+    for dir in "$HOME/.claude/skills"/*; do
+      if [ -d "$dir" ]; then
+        basename "$dir"
+      fi
+    done
+  fi
+
+  # Check project skills
+  if [ -d ".claude/skills" ]; then
+    for dir in ".claude/skills"/*; do
+      if [ -d "$dir" ]; then
+        basename "$dir"
+      fi
+    done
+  fi
+}
+
+INSTALLED_SKILLS=$(get_installed_skills)
+
 # Search SkillsMP API
 curl -X GET "https://skillsmp.com/api/v1/skills/ai-search?q=<encoded_query>" \
   -H "Authorization: Bearer $SKILLSMP_API_KEY"
 
-# Clone skill to target location
-mkdir -p "$TARGET"
-git clone <repo_url> "$TARGET/<skill_name>"
+# Check if skill already exists before installing
+skill_name="example-skill"
+if echo "$INSTALLED_SKILLS" | grep -qx "$skill_name"; then
+  echo "✓ $skill_name already installed, skipping"
+else
+  mkdir -p "$TARGET"
+  git clone <repo_url> "$TARGET/$skill_name"
+fi
 ```
 
 ## Example Workflow

@@ -85,5 +85,4 @@ When detecting context for a project:
 ## Integration
 
 This skill feeds into:
-- **auto-plugin**: Determines which marketplace plugins to install
-- **auto-sill**: Determines which SkillsMP skills to fetch
+- **scan**: Determines which SkillsMP skills to fetch
